@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+body {
+    font-family: 'Source Serif Pro', serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1::first-letter {
+    color: red;
+}
+
+header p {
+    font-size: 23px;
+    margin: 0;
+}
+
+main {
+    padding-left: 70px;
+}
+
+input {
+    display: none;
+}
+
+.listViewItem,
+.tableViewItem {
+    font-size: 25px !important;
+    color: lightgray;
+}
+
+article {
+    width: 350px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#list:checked ~ label[for="list"],
+#table:checked ~ label[for="table"] {
+    color: black;
+    text-shadow: 1px 1px #bbb;;
+}
+
+#table:checked ~ section > article > .imgCat {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+
+#table:checked ~ section {
+    text-align: center;
+    width: 95%;
+    margin-top: -55px;
+}
+
+#table:checked ~ section > article > .imgCat a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+#list:checked ~ section {
+    display: table;
+    width: 95%;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+}
+
+#list:checked ~ section > article {
+    display: table-row;
+}
+
+#list:checked ~ section > article > .imgCat,
+#list:checked ~ section > article > .params,
+#list:checked ~ section > article > .info {
+    display: table-cell;
+    padding: 15px 0;
+
+}
+
+#list:checked ~ section > article > .imgCat {
+    vertical-align: middle;
+    text-align: center;
+    width: 30%;
+}
+
+a {
+    font-size: 120%;
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover img {
+    opacity: 0.7;
+}
+
+.imgCat img {
+    width: 93%;
+    transition: opacity 1s;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/*Rating*/
+
+.rating {
+    width: 290px;
+    margin-bottom: 15px;
+}
+
+.rating p {
+    margin: 0;
+}
+
+.rating_item::before {
+    content: '★'
+}
+
+.rating > input:hover ~ label {
+    color: gold;
+    text-shadow: none;
+}
+
+.rating_item {
+    float: right;
+    font-size: 35px;
+    line-height: 20px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+
+.rating > input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px;
+}
+
+.rating input:checked ~ label:hover,
+.rating input ~ label:hover ~ label {
+    text-shadow: none;
+}
+
+/*Info*/
+.kindCat {
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.coin {
+    color: #F08080;
+    font-size: 35px;
+}
+
+.info p {
+    text-indent: 15px;
+    padding: 0 10px;
+    text-align: left;
+    margin: 0;
+}
+
+.info h3 {
+    margin: 5px;
+}
