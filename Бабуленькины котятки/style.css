@@ -1,0 +1,249 @@
+header {
+    text-align: center;
+    margin: 45px;
+}
+
+body {
+    background-color: #e6e6e6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: rgb(196, 14, 14);
+    font-size: 20px;
+    margin: 0;
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*breedCat*/
+.breedCheck {
+    display: none;
+    width: 100%;
+}
+
+#breed1:checked ~ section > ul > .breed1,
+#breed2:checked ~ section ul > .breed2,
+#breed3:checked ~ section ul > .breed3,
+#breed4:checked ~ section ul > .breed4 {
+    background-color: #808080;
+    color: #fff;
+}
+
+#breed1:checked ~ .galleryCat > ul li:not(.abyssinian),
+#breed2:checked ~ .galleryCat > ul li:not(.british),
+#breed3:checked ~ .galleryCat > ul li:not(.russianBlue),
+#breed4:checked ~ .galleryCat > ul li:not(.siamese) {
+    opacity: 0.5;
+}
+
+#breed1:checked ~ .galleryCat > ul li:not(.abyssinian) > p,
+#breed2:checked ~ .galleryCat > ul li:not(.british) > p,
+#breed3:checked ~ .galleryCat > ul li:not(.russianBlue) > p,
+#breed4:checked ~ .galleryCat > ul li:not(.siamese) > p {
+    display: none;
+}
+
+.breedCat ul li {
+    border-bottom: 1px solid rgb(184, 183, 183);
+    font-size: 20px;
+
+}
+
+.breedCat ul li label {
+    padding: 15px;
+    display: block;
+}
+
+.breedCat, .rating {
+    background-color: #cccccc;
+    flex: 1;
+    margin: 0 10px;
+}
+
+/*galleryCat*/
+.galleryCat {
+    flex: 3;
+
+}
+
+.galleryCat ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  240px 230px 240px 300px;
+    grid-template-areas: "a b b"
+                         "c d e"
+                         "f f g"
+                         "h h h";
+    grid-gap: 5px;
+}
+
+.galleryCat ul li p {
+    display: none;
+}
+
+.galleryCat ul li:first-child {
+    grid-area: a;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galleryCat ul li:nth-child(2) {
+    grid-area: b;
+}
+
+.galleryCat ul li:nth-child(3) {
+    grid-area: c;
+}
+
+.galleryCat ul li:nth-child(4) {
+    grid-area: d;
+}
+
+.galleryCat ul li:nth-child(5) {
+    grid-area: e;
+}
+
+.galleryCat ul li:nth-child(6) {
+    grid-area: f;
+}
+
+.galleryCat ul li:nth-child(7) {
+    grid-area: g;
+}
+
+.galleryCat ul li:last-child {
+    grid-area: h;
+}
+
+img:hover + .name,
+.name:hover {
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    padding: 15px 10px;
+    font-size: 20px;
+    position: relative;
+    top: -105px;
+    cursor: default;
+}
+
+/*rating*/
+.rating {
+    align-self: start;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.bar-container {
+    width: 80%;
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+.bar-4 {
+    margin-top: 10px;
+    width: 90%;
+    height: 18px;
+    background: linear-gradient(to right, rgb(32, 202, 32) 50%, white);
+}
+
+.bar-3 {
+    margin-top: 10px;
+    width: 80%;
+    height: 18px;
+    background: linear-gradient(to right, rgb(249, 253, 19) 50%, white);
+    order: 3;
+}
+
+.bar-2 {
+    margin-top: 10px;
+    width: 100%;
+    height: 18px;
+    background: linear-gradient(to right, rgb(32, 202, 32) 50%, white);
+    order: 2;
+}
+
+.bar-1 {
+    margin-top: 10px;
+    width: 40%;
+    height: 18px;
+    background: linear-gradient(to right, rgb(230, 36, 36) 50%, white);
+}
+
+.side {
+    float: right;
+    width: 15%;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.rating ul li {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#sort:checked ~ ul .order2 {
+    order: 2;
+}
+
+#sort:checked ~ ul .order1 {
+    order: 1;
+}
+
+#sort:checked ~ ul .order3 {
+    order: 3;
+}
+
+#sort:checked ~ ul .order4 {
+    order: 4;
+}
+
+.rating ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.sort {
+    position: relative;
+    left: 100px;
+}
+
+/*footer*/
+footer {
+    border-top: 3px solid #cccccc;
+    margin-top: 15px;
+    padding: 20px 25px;
+}
+
+footer p {
+    float: left;
+    margin: 0;
+}
+
+footer a {
+    float: right;
+    text-decoration: none;
+    color: blue;
+}
+
