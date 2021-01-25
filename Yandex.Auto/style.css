@@ -1,0 +1,179 @@
+head{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 1020px;
+    height: 1650px;
+    background-color:#fff;
+    margin: 0 auto;
+}
+.container{
+    width: 984px;
+    height: 1614px;
+    background-color:#f6f5f3;
+    margin: 18px auto;
+    position: relative;
+}
+.logo{
+    width: 167px;
+    height: 130px;
+    background-image:url("img/Logo.png");
+    position: absolute;
+    left: 743px;
+}
+.start{
+    position: absolute;
+    top:139px;
+    right: 22px;
+    width: 940px;
+    height: 323px;
+}
+.btn{
+    border-radius: 50%;
+    box-shadow: 1.5px 1px 1px 0px rgba(255, 90, 0, 0.8);
+    width: 60px;
+    height: 60px;
+    border:none;   
+    padding: 0;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: .8;
+}
+.btnRight{
+    background: rgb(255, 219, 74) url("img/pointer.png") 56% 50% no-repeat;
+    float: right;
+    margin-top:134px;
+    margin-right: 49px;
+}
+.btnLeft{
+    background: rgb(255, 219, 74) url("img/pointerR.png") 46% 50% no-repeat;
+    float: left;
+    margin-top:134px;
+    margin-left: 49px;
+}
+.start .text{
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    quotes: "\00ab" "\00bb";
+    height: 156px;
+    width:646px;
+    float: left;
+    text-indent:-0.5em;
+    padding-left: 50px;
+    text-align: left;
+    word-spacing: 4px;
+}
+
+.start .imgCar{
+    margin-top:30px;
+}
+
+.video{
+    position: relative;
+    width: 641px;
+    height: 361px;
+    margin: 0 auto;
+    top: 545px;   
+}
+.video .titleVideo{
+    position: absolute;
+    background-color: rgb(41, 54, 60);
+    opacity: 0.702;
+    width: 642px;
+    height: 49px;
+    
+}
+.video .titleVideo p{
+    font-size: 22px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0;
+    margin:13px 0 0 0;
+    line-height: 1.2;
+}
+.video .btnVideo{
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 1.5px 1px 1px 0 rgba(255, 90, 0, 0.8);
+    width: 128px;
+    height: 128px;
+    background: rgb(255, 219, 74) url("img/pointerVideo.png") 60% 50% no-repeat;
+    top:120px;
+    right: 255px;
+}
+.approach{
+    position: absolute;
+    height: 314px;
+    top:980px;
+    width: 984px;
+}
+
+.listApp{
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 232px;
+    width: 922px;
+    padding-top: 50px;
+    grid-gap:10px;
+    margin: 0 auto;
+}
+
+h3{
+    font-size: 47px;
+    font-family: "Arial", sans-serif;
+    line-height: 1.2;
+    padding: 0 0 0 84px ;
+    margin: 0;
+    font-weight: normal;
+}
+.approachHead{
+    font-size: 30px;
+    font-family: "Arial", sans-serif;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding: 0;
+}
+.image{
+    height:84px ;
+}
+.info{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.end{
+    position: absolute;
+    top:1372px;
+    width: 100%;
+    text-align: center;
+}
+.end p{
+    font-size: 42px;
+    font-family: "Arial", sans-serif;
+    padding: 0;
+    margin: 0 0 73px 0;
+}
+.btnTry{
+    font-size: 36px;
+    border-radius: 8px;
+    width: 317px;
+    height: 70px;
+    background:linear-gradient(to top,#ffdb01,#ffe349);
+    box-shadow:none;
+    color:#473e09;
+}
+.btnTry:hover{
+    background:linear-gradient(to top,#ffe130,#ffe86a);
+    opacity: 1;
+}
